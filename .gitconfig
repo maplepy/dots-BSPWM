@@ -1,6 +1,8 @@
 [user]
     email = github.register@slmail.me
     name = Maplepy
+[init]
+    defaultBranch = master
 [alias]
     # https://www.durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/
     # Explore your history, the commits and the code
