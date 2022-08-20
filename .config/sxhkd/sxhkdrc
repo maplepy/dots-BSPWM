@@ -1,5 +1,5 @@
 #
-## Applications
+## Applications shortcuts
 #
 
 # Terminal
@@ -8,6 +8,9 @@ super + Return
 # Program launcher
 super + d
 	dmenu_run
+# Browser
+super + w
+	librewolf
 
 #
 ## BSPWM
