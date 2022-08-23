@@ -22,6 +22,7 @@ alias ...="cd ../.."
 
 alias grub-regen='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias unlock="sudo rm /var/lib/pacman/db.lck"
+alias yayes="yay -Syu --sudoloop --noconfirm"
 alias pacman-orphaned="sudo pacman -Rns (pacman -Qtdq)" # Remove orphaned packages
 alias pacman-purge="yay -Sc && yay -c" # Clear cache and unused packages
 
