@@ -41,7 +41,8 @@
     cl = clone
     ci = commit
     cm = commit -m
-    un = rm --cached # Unstage a file
+    un = restore --staged
+    rmc = rm --cached # Unstage a file
     co = checkout
     br = branch
     diff = diff --word-diff
