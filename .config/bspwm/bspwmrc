@@ -27,8 +27,11 @@ bspc rule -a Screenkey manage=off
 
 
 ### Autostart
+# Compositor
+killall picom && picom --no-vsync -b &
+
 # Polybar
-"$HOME/.config/polybar/launch.sh"
+sh "$HOME/.config/polybar/launch.sh" &
 
 # Background
-feh quixotic-wallpaper/neoncircuit/red.png --bg-fill
+feh quixotic-wallpaper/neoncircuit/red.png --bg-fill &
