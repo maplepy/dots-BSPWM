@@ -31,6 +31,7 @@ alias pacman-purge="yay -Sc && yay -c" # Clear cache and unused packages
 ## Config files
 #
 alias modfish="v ~/.config/fish/config.fish"
+alias modgit="v ~/.gitconfig"
 alias modalacritty="v ~/.config/alacritty/alacritty.yml"
 alias modvim="v ~/.config/nvim/init.vim"
 alias modbspwm="v ~/.config/bspwm/bspwmrc"
