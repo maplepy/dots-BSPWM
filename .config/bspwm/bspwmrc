@@ -14,7 +14,7 @@ bspc config gapless_monocle      true
 
 ### Window rules
 # Desktop
-bspc rule -a Chromium desktop='^2'
+bspc rule -a code-oss desktop='^1'
 bspc rule -a *:Navigator desktop='^2' # Any web browser
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 
