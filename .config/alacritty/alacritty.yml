@@ -14,16 +14,16 @@
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
-#env:
+env:
   # TERM variable
   #
   # This value is used to set the `$TERM` environment variable for
   # each instance of Alacritty. If it is not present, alacritty will
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
-  #TERM: alacritty
+  TERM: alacritty
 
-#window:
+window:
   # Window dimensions (changes require restart)
   #
   # Number of lines/columns (not pixels) in the terminal. The number of columns
@@ -50,7 +50,7 @@
   #  y: 0
 
   # Spread additional padding evenly around the terminal content.
-  #dynamic_padding: false
+  dynamic_padding: true
 
   # Window decorations
   #
@@ -61,13 +61,13 @@
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background and no title bar buttons
-  #decorations: full
+  decorations: none
 
   # Background opacity
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  #opacity: 1.0
+  opacity: 0.2
 
   # Startup Mode (changes require restart)
   #
@@ -97,7 +97,7 @@
   #
   # Override the variant of the GTK theme. Commonly supported values are `dark`
   # and `light`. Set this to `None` to use the default theme variant.
-  #gtk_theme_variant: None
+  # gtk_theme_variant: None
 
 #scrolling:
   # Maximum number of lines in the scrollback buffer.
@@ -110,36 +110,36 @@
 # Font configuration
 font:
   # Normal (roman) font face
-  normal:
-    # Font family
-    #
-    # Default:
-    #   - (macOS) Menlo
-    #   - (Linux/BSD) monospace
-    #   - (Windows) Consolas
-    family: JetBrainsMono Nerd Font
+  # normal:
+  #   # Font family
+  #   #
+  #   # Default:
+  #   #   - (macOS) Menlo
+  #   #   - (Linux/BSD) monospace
+  #   #   - (Windows) Consolas
+  #   family: JetBrainsMono Nerd Font
 
-    # The `style` can be specified to pick a specific face.
-    style: Regular
+  #   # The `style` can be specified to pick a specific face.
+  #   style: Regular
 
-  # Bold font face
-  bold:
-    # Font family
-    #
-    # If the bold family is not specified, it will fall back to the
-    # value specified for the normal font.
-    family: JetBrainsMono Nerd Font
-    style: Bold
+  # # Bold font face
+  # bold:
+  #   # Font family
+  #   #
+  #   # If the bold family is not specified, it will fall back to the
+  #   # value specified for the normal font.
+  #   family: JetBrainsMono Nerd Font
+  #   style: Bold
 
-  # Italic font face
-  italic:
-    family: JetBrainsMono Nerd Font
-    style: Italic
+  # # Italic font face
+  # italic:
+  #   family: JetBrainsMono Nerd Font
+  #   style: Italic
 
-  # Bold italic font face
-  bold_italic:
-    family: JetBrainsMono Nerd Font
-    style: Bold Italic
+  # # Bold italic font face
+  # bold_italic:
+  #   family: JetBrainsMono Nerd Font
+  #   style: Bold Italic
 
   # Point size
   size: 9.0
@@ -367,16 +367,16 @@ font:
   # When set to `true`, selected text will be copied to the primary clipboard.
   #save_to_clipboard: false
 
-#cursor:
+cursor:
   # Cursor style
-  #style:
+  style:
     # Cursor shape
     #
     # Values for `shape`:
     #   - ▇ Block
     #   - _ Underline
     #   - | Beam
-    #shape: Block
+    shape: Beam
 
     # Cursor blinking state
     #
@@ -400,7 +400,7 @@ font:
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
-  #unfocused_hollow: true
+  unfocused_hollow: false
 
   # Thickness of the cursor relative to the cell width as floating point number
   # from `0.0` to `1.0`.
