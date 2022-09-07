@@ -20,7 +20,7 @@ alias free="free -m"
 alias ..="cd .."
 alias ...="cd ../.."
 
-alias grub-regen='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+alias grub-regen="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias unlock="sudo rm /var/lib/pacman/db.lck"
 alias yayes="yay -Syu --sudoloop --noconfirm"
 alias pacman-orphaned="sudo pacman -Rns (pacman -Qtdq)" # Remove orphaned packages
@@ -41,16 +41,17 @@ alias modeww="v ~/.config/eww"
 
 alias fishreload="source ~/.config/fish/config.fish"
 
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+# Dotfiles
+alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 # temporary
-alias 1280p='xrandr --output Virtual-1 --mode 1280x720 && bspc wm -r'
-alias 1024p='xrandr --output Virtual-1 --mode 1024x768 && bspc wm -r'
-alias 1920p='xrandr --output Virtual-1 --mode 1920x1080 && sleep 1 && bspc wm -r'
+alias 1280p="xrandr --output Virtual-1 --mode 1280x720 && bspc wm -r"
+alias 1024p="xrandr --output Virtual-1 --mode 1024x768 && bspc wm -r"
+alias 1920p="xrandr --output Virtual-1 --mode 1920x1080 && sleep 1 && bspc wm -r"
 
-alias grep='grep --color=auto'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
+alias grep="grep --color=auto"
+alias egrep="egrep --color=auto"
+alias fgrep="fgrep --color=auto"
 
 export EDITOR="nvim"
 export TERMINAL="alacritty"
