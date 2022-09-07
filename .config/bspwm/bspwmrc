@@ -27,8 +27,11 @@ bspc rule -a Screenkey manage=off
 
 
 ### Autostart
+# 1080p resolution
+xrandr --output Virtual-1 --mode 1920x1080 --rate 144
+
 # Compositor
-killall picom && picom --no-vsync -b &
+# picom --no-vsync -b &
 
 # Polybar
 sh "$HOME/.config/polybar/launch.sh" &
