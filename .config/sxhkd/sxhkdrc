@@ -7,10 +7,37 @@ super + Return
 	alacritty
 # Program launcher
 super + d
-	dmenu_run
+	rofi -modi run,drun,window \
+	-show drun -sidebar-mode \
+	-show-icons -font "DejaVu Sans 10"
 # Browser
 super + w
 	librewolf
+
+
+#
+## Media control
+#
+
+# XF86AudioRaiseVolume
+# XF86AudioLowerVolume
+# XF86AudioMute
+
+# speaker
+XF86Audio{RaiseVolume,LowerVolume,Mute}
+	~/scripts/volume.sh speaker {raise,lower,toggle}
+
+# microphone
+super + XF86Audio{RaiseVolume,LowerVolume,Mute}
+	~/scripts/volume.sh mic {raise,lower,toggle}
+
+# media keys
+XF86Audio{Stop,Prev,Next,Play}
+	~/scripts/media.sh keys {stop,prev,next,play}
+
+# brightness control
+XF86MonBrightness{Up,Down}
+	xbacklight -{inc,dec} 5
 
 #
 ## BSPWM
