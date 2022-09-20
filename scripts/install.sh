@@ -1,4 +1,4 @@
-#! /usr/bin sh
+#!/bin/bash
 
 # Install yay
 sudo pacman -S git base-devel
@@ -6,6 +6,9 @@ cd
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
+
+# Install pkgs
+yay -S --needed - < ~/pkgs
 
 # Install fish shell
 yay -S fish fisher
