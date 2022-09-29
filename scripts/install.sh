@@ -19,3 +19,9 @@ fisher install andreiborisov/sponge
 fisher install nickeb96/puffer-fish
 # fisher install pure-fish/pure or
 fisher install IlanCosman/tide@v5
+
+
+### Enable services
+
+# Auto update mirrors
+sudo systemctl enable --now reflector.service
