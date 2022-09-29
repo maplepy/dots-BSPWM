@@ -25,7 +25,7 @@ alias unlock="sudo rm /var/lib/pacman/db.lck"
 alias yayes="yay -Syu --sudoloop --noconfirm"
 alias pacman-orphaned="sudo pacman -Rns (pacman -Qtdq)" # Remove orphaned packages
 alias pacman-purge="yay -Sc && yay -c" # Clear cache and unused packages
-
+alias mirror-update="curl -s 'https://archlinux.org/mirrorlist/?country=FR&country=GB&country=DE&protocol=https&use_mirror_status=on' | sed -e 's/^#Server/Server/' -e '/^#/d' | rankmirrors -n 5 -"
 
 #
 ## Config files
