@@ -5,11 +5,13 @@
 # Terminal
 super + Return
 	alacritty
+
 # Program launcher
 super + d
 	rofi -modi run,drun,window \
 	-show drun -sidebar-mode \
 	-show-icons -font "DejaVu Sans 10"
+
 # Browser
 super + w
 	librewolf
@@ -19,9 +21,9 @@ super + w
 ## Media control
 #
 
-# XF86AudioRaiseVolume
-# XF86AudioLowerVolume
-# XF86AudioMute
+# printscreen
+super + Print
+	maim -suB | xclip -selection clipboard -t image/png
 
 # speaker
 XF86Audio{RaiseVolume,LowerVolume,Mute}
