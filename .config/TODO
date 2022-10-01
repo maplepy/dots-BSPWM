@@ -3,16 +3,6 @@ https://wiki.archlinux.org/title/Backlight#Backlight_utilities
 https://aur.archlinux.org/packages/clight
 or https://aur.archlinux.org/packages/wluma
 
-# Default apps
-$ xdg-mime default okularApplication_pdf.desktop application/pdf
-or ~/.config/mimeapps.list
-with    [Default Applications] # for default
-and     [Added Associations] # shouldn't be default
-
-# Icons
-~/.local/share/icons/
-or ~/.icons/
-
 # Rofi
 
 # Microphone module
