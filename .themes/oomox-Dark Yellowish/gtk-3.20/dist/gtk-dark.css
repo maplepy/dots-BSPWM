@@ -108,7 +108,7 @@
   -GtkWidget-cursor-aspect-ratio: 0;
   outline-color: rgba(64, 70, 79, 0.5);
   outline-style: dashed;
-  outline-width: 20px;
+  outline-width: 1px;
   outline-offset: -1px;
   -gtk-outline-radius: 3px; }
 
@@ -184,7 +184,7 @@ assistant.csd .sidebar {
   border-top-style: none; }
 
 assistant .sidebar label {
-  padding: 20px 40px; }
+  padding: 2px 4px; }
 
 assistant .sidebar label.highlight {
   background-color: mix(#f7f8f7,#282a2e,0.8); }
@@ -212,9 +212,9 @@ stacksidebar row.needs-attention > label {
 #restart_button button, #shutdown_button button, #login_window button, .nemo-window .sidebar + separator + box .primary-toolbar button.flat, .nemo-window .sidebar + separator + box .primary-toolbar button.flat.nautilus-circular-button.image-button, treeview.view header button:active, treeview.view header button:hover, treeview.view header button, .osd spinbutton.vertical button:first-child, .osd spinbutton:not(.vertical) button, .osd button, button.osd,
 #XfceNotifyWindow button, frame.app-notification button, popover.background button, infobar.error button, infobar.question button, infobar.warning button, infobar.info button, headerbar.selection-mode button,
 .titlebar.selection-mode:not(headerbar) button, .destructive-action, .suggested-action, headerbar.selection-mode button.suggested-action, toolbar.inline-toolbar button, toolbar button, .titlebar:not(headerbar) button, headerbar button, button, button.nautilus-circular-button.image-button {
-  min-height: 54px;
-  min-width: 54px;
-  padding: 20px;
+  min-height: 18px;
+  min-width: 18px;
+  padding: 2px;
   border-width: 1px;
   border-style: solid;
   border-radius: 3px;
@@ -224,7 +224,7 @@ stacksidebar row.needs-attention > label {
   #restart_button button.text-button, #shutdown_button button.text-button, #login_window button.text-button, .nemo-window .sidebar + separator + box .primary-toolbar button.text-button.flat, .nemo-window .sidebar + separator + box .primary-toolbar button.text-button.flat.nautilus-circular-button.image-button, treeview.view header button.text-button, .osd spinbutton.vertical button.text-button:first-child, .osd spinbutton:not(.vertical) button.text-button,
   #XfceNotifyWindow button.text-button, frame.app-notification button.text-button, popover.background button.text-button, infobar.error button.text-button, infobar.question button.text-button, infobar.warning button.text-button, infobar.info button.text-button, headerbar.selection-mode button.text-button,
   .titlebar:not(headerbar).selection-mode button.text-button, .text-button.destructive-action, .text-button.suggested-action, toolbar.inline-toolbar button.text-button, button.text-button, button.text-button.nautilus-circular-button.image-button {
-    padding: 20px 24.2857142857px; }
+    padding: 2px 2.4285714286px; }
 
 notebook > header > tabs > tab button.flat:active, notebook > header > tabs > tab button.flat:active:hover, notebook > header > tabs > tab button.flat:hover, modelbutton.flat,
 menuitem.button.flat, menu menuitem calendar.button:hover,
@@ -390,7 +390,7 @@ button, button.nautilus-circular-button.image-button {
     background-image: none;
     border-color: rgba(247, 248, 247, 0.22);
     outline-color: rgba(64, 70, 79, 0.5);
-    outline-width: 20px;
+    outline-width: 1px;
     outline-style: solid;
     outline-offset: -3px;
     color: #f7f8f7;
@@ -493,8 +493,8 @@ button, button.nautilus-circular-button.image-button {
       box-shadow: inset 1px 0 rgba(46, 53, 46, 0.06), inset 0 1px rgba(46, 53, 46, 0.07), inset -1px 0 rgba(46, 53, 46, 0.06); }
   button.circular, button.nautilus-circular-button.image-button, button.circular-button {
     padding: 0;
-    min-width: 62px;
-    min-height: 62px;
+    min-width: 26px;
+    min-height: 26px;
     border-radius: 9999px;
     -gtk-outline-radius: 9999px; }
     button.circular label, button.nautilus-circular-button.image-button label, button.circular-button label {
@@ -505,7 +505,7 @@ spinbutton:disabled {
 
 spinbutton button, spinbutton button.nautilus-circular-button.image-button {
   color: #f7f8f7;
-  padding: 20px 39px; }
+  padding: 2px 3px; }
   spinbutton button:active, spinbutton button.nautilus-circular-button.image-button:active, spinbutton button:checked, spinbutton button.nautilus-circular-button.image-button:checked, spinbutton button:hover, spinbutton button.nautilus-circular-button.image-button:hover {
     background-color: #303237;
     background-image: none; }
@@ -590,8 +590,8 @@ spinbutton:not(.vertical) {
 
 spinbutton.vertical button, spinbutton.vertical button.nautilus-circular-button.image-button, spinbutton.vertical entry {
   min-width: 0;
-  padding-left: 18px;
-  padding-right: 18px; }
+  padding-left: 0px;
+  padding-right: 0px; }
 
 spinbutton.vertical entry {
   border-radius: 0;
@@ -623,25 +623,25 @@ spinbutton.vertical button.down {
 *******************/
 combobox button.combo, combobox button.combo.nautilus-circular-button.image-button {
   min-width: 0;
-  padding-left: 24.2857142857px;
-  padding-right: 24.2857142857px; }
+  padding-left: 2.4285714286px;
+  padding-right: 2.4285714286px; }
 
 combobox arrow {
   -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
-  min-height: 50px;
-  min-width: 50px;
-  padding: 10px; }
+  min-height: 14px;
+  min-width: 14px;
+  padding: 1px; }
 
 combobox box button, combobox box button.nautilus-circular-button.image-button, combobox box entry {
-  padding: 20px 24.2857142857px; }
+  padding: 2px 2.4285714286px; }
 
 combobox box > entry + button.combo, combobox box > entry + button.combo.nautilus-circular-button.image-button {
-  padding: 20px; }
+  padding: 2px; }
 
 combobox menu menuitem {
-  padding: 20px 39px; }
+  padding: 2px 3px; }
   combobox menu menuitem cellview {
-    min-height: 54px; }
+    min-height: 18px; }
 
 /*********
  ! Entry *
@@ -732,10 +732,10 @@ combobox menu menuitem {
     color: #bec1bf; }
   #login_window entry image.left,
   #XfceNotifyWindow entry image.left, entry image.left {
-    padding-right: 20px; }
+    padding-right: 2px; }
   #login_window entry image.right,
   #XfceNotifyWindow entry image.right, entry image.right {
-    padding-left: 20px; }
+    padding-left: 2px; }
   #login_window entry.warning,
   #XfceNotifyWindow entry.warning, popover.background entry.warning, entry.warning {
     color: #282a2e;
@@ -795,7 +795,7 @@ entry {
   background-color: #282a2e;
   background-image: none;
   border-color: mix(#f7f8f7,#282a2e,0.8);
-  padding: 22px 24.2857142857px;
+  padding: 4px 2.4285714286px;
   color: #f7f8f7;
   caret-color: #2ad42a;
   -gtk-secondary-caret-color: #ff00bc; }
@@ -831,12 +831,12 @@ entry {
  ! Toolbar
 **********/
 toolbar {
-  padding: 19px;
+  padding: 1px;
   border-style: none; }
   toolbar.horizontal separator {
-    margin: 0 22px 1px; }
+    margin: 0 4px 1px; }
   toolbar.vertical separator {
-    margin: 22px 1px 22px 0; }
+    margin: 4px 1px 4px 0; }
 
 headerbar {
   border-width: 0 0 1px;
@@ -846,11 +846,11 @@ headerbar {
   headerbar separator,
   headerbar button,
   headerbar button.nautilus-circular-button.image-button {
-    margin-top: 23px;
-    margin-bottom: 23px; }
+    margin-top: 5px;
+    margin-bottom: 5px; }
   headerbar switch {
-    margin-top: 21px;
-    margin-bottom: 21px; }
+    margin-top: 3px;
+    margin-bottom: 3px; }
   window:not(.tiled):not(.maximized) separator:first-child + headerbar, window:not(.tiled):not(.maximized) headerbar:first-child {
     border-top-left-radius: 3px; }
   window:not(.tiled):not(.maximized) headerbar:last-child {
@@ -884,10 +884,10 @@ headerbar {
     border-color: mix(#32363c,#f7f8f7,0.3); }
   .titlebar:not(headerbar) .title, headerbar .title {
     font-weight: bold;
-    padding: 0 40px; }
+    padding: 0 4px; }
   .titlebar:not(headerbar) .subtitle, headerbar .subtitle {
     font-size: smaller;
-    padding: 0 40px; }
+    padding: 0 4px; }
   .titlebar:not(headerbar) button, headerbar button, headerbar button.nautilus-circular-button.image-button {
     background-color: #32363c;
     background-image: none;
@@ -951,7 +951,7 @@ headerbar {
       background-image: none;
       border-color: rgba(247, 248, 247, 0.22);
       outline-color: rgba(64, 70, 79, 0.5);
-      outline-width: 20px;
+      outline-width: 1px;
       outline-style: solid;
       outline-offset: -3px;
       color: #f7f8f7;
@@ -1017,7 +1017,7 @@ headerbar {
     .titlebar:not(headerbar) button separator, headerbar button separator, headerbar button.nautilus-circular-button.image-button separator {
       background-image: image(mix(#f7f8f7,#32363c,0.9)); }
     .titlebar:not(headerbar) button.image-button, headerbar button.image-button, headerbar button.image-button.nautilus-circular-button {
-      padding: 20px; }
+      padding: 2px; }
   .titlebar:not(headerbar) viewswitcher button, headerbar viewswitcher button, headerbar viewswitcher button.nautilus-circular-button.image-button,
   .titlebar:not(headerbar) .linked > button,
   headerbar .linked > button,
@@ -1070,7 +1070,7 @@ headerbar {
     headerbar .linked > button:checked:only-child {
       box-shadow: inset 1px 0 rgba(46, 53, 46, 0.06), inset 0 1px rgba(46, 53, 46, 0.07), inset -1px 0 rgba(46, 53, 46, 0.06); }
   .titlebar:not(headerbar) box button.image-button, headerbar box button.image-button, headerbar box button.image-button.nautilus-circular-button {
-    padding: 20px 24px; }
+    padding: 2px 6px; }
   .titlebar:not(headerbar) separator, headerbar separator {
     color: #1e2024;
     border-color: currentColor;
@@ -1100,14 +1100,14 @@ headerbar {
   .titlebar:not(headerbar) .title, headerbar .title {
     font-weight: bold; }
   .titlebar:not(headerbar) separator.titlebutton, headerbar separator.titlebutton {
-    margin-left: 20px; }
+    margin-left: 2px; }
   .titlebar:not(headerbar) button, headerbar button, headerbar button.nautilus-circular-button.image-button {
     background-color: #e2bc72;
     background-image: none;
     border-color: rgba(194, 202, 194, 0.22);
     color: #f7f8f7;
     box-shadow: 0 1px 2px -1px rgba(46, 53, 46, 0.12);
-    padding: 20px; }
+    padding: 2px; }
     .titlebar:not(headerbar) button:focus, headerbar button:focus, headerbar button.nautilus-circular-button.image-button:focus, .titlebar:not(headerbar) button:hover, headerbar button:hover, headerbar button.nautilus-circular-button.image-button:hover {
       border-color: mix(#40464f,rgba(247, 248, 247, 0.22),0.3); }
     .titlebar:not(headerbar) button:active, headerbar button:active, headerbar button.nautilus-circular-button.image-button:active, .titlebar:not(headerbar) button:checked, headerbar button:checked, headerbar button.nautilus-circular-button.image-button:checked {
@@ -1165,7 +1165,7 @@ headerbar {
       background-image: none;
       border-color: rgba(247, 248, 247, 0.22);
       outline-color: rgba(64, 70, 79, 0.5);
-      outline-width: 20px;
+      outline-width: 1px;
       outline-style: solid;
       outline-offset: -3px;
       color: #f7f8f7;
@@ -1231,7 +1231,7 @@ headerbar {
     .titlebar:not(headerbar) button separator, headerbar button separator, headerbar button.nautilus-circular-button.image-button separator {
       background-image: image(mix(#f7f8f7,#e2bc72,0.9)); }
     .titlebar:not(headerbar) button.text-button, headerbar button.text-button, headerbar button.text-button.nautilus-circular-button.image-button {
-      padding: 20px 24.2857142857px; }
+      padding: 2px 5px; }
     .titlebar:not(headerbar) button.flat, headerbar button.flat, headerbar button.flat.nautilus-circular-button.image-button {
       color: #f7f8f7; }
     .titlebar:not(headerbar) button.flat:hover, headerbar button.flat:hover {
@@ -1247,10 +1247,10 @@ headerbar {
     color: #f7f8f7; }
   .titlebar:not(headerbar) button.titlebutton + separator.titlebutton, headerbar button.titlebutton + separator.titlebutton {
     margin-left: 0;
-    margin-right: 20px; }
+    margin-right: 2px; }
   .titlebar:not(headerbar) button.titlebutton, headerbar button.titlebutton, headerbar button.titlebutton.nautilus-circular-button.image-button {
     border: 0;
-    padding: 20px;
+    padding: 2px;
     background-image: none;
     background-color: transparent;
     color: #f7f8f7;
@@ -1292,10 +1292,10 @@ toolbar {
     border-color: mix(#282a2e,#f7f8f7,0.3); }
   toolbar .title {
     font-weight: bold;
-    padding: 0 40px; }
+    padding: 0 4px; }
   toolbar .subtitle {
     font-size: smaller;
-    padding: 0 40px; }
+    padding: 0 4px; }
   toolbar button, toolbar button.nautilus-circular-button.image-button {
     background-color: #282a2e;
     background-image: none;
@@ -1359,7 +1359,7 @@ toolbar {
       background-image: none;
       border-color: rgba(247, 248, 247, 0.22);
       outline-color: rgba(64, 70, 79, 0.5);
-      outline-width: 20px;
+      outline-width: 1px;
       outline-style: solid;
       outline-offset: -3px;
       color: #f7f8f7;
@@ -1425,7 +1425,7 @@ toolbar {
     toolbar button separator, toolbar button.nautilus-circular-button.image-button separator {
       background-image: image(mix(#f7f8f7,#282a2e,0.9)); }
     toolbar button.image-button, toolbar button.image-button.nautilus-circular-button {
-      padding: 20px; }
+      padding: 2px; }
   toolbar viewswitcher button, toolbar viewswitcher button.nautilus-circular-button.image-button,
   toolbar .linked > button,
   toolbar .linked > button.nautilus-circular-button.image-button {
@@ -1484,7 +1484,7 @@ toolbar {
     toolbar .linked > button:checked:only-child:hover:focus {
       box-shadow: inset 1px 0 rgba(46, 53, 46, 0.06), inset 0 1px rgba(46, 53, 46, 0.07), inset -1px 0 rgba(46, 53, 46, 0.06); }
   toolbar box button.image-button, toolbar box button.image-button.nautilus-circular-button {
-    padding: 20px 24px; }
+    padding: 2px 6px; }
   toolbar separator, toolbar separator:disabled {
     color: #18191c;
     border-color: currentColor;
@@ -1563,7 +1563,7 @@ toolbar {
         background-image: none;
         border-color: rgba(247, 248, 247, 0.22);
         outline-color: rgba(64, 70, 79, 0.5);
-        outline-width: 20px;
+        outline-width: 1px;
         outline-style: solid;
         outline-offset: -3px;
         color: #f7f8f7;
@@ -1668,7 +1668,7 @@ window.csd > .titlebar:not(headerbar) {
  ! Action-bar *
 ***************/
 actionbar > revealer > box {
-  padding: 20px;
+  padding: 2px;
   border-top: 1px solid mix(#282a2e,#f7f8f7,0.18); }
   actionbar > revealer > box:backdrop {
     border-color: mix(#282a2e,mix(#282a2e,#f7f8f7,0.18),0.9); }
@@ -1786,7 +1786,7 @@ searchbar,
     background-image: none;
     border-color: rgba(190, 193, 191, 0.22);
     outline-color: rgba(64, 70, 79, 0.5);
-    outline-width: 20px;
+    outline-width: 1px;
     outline-style: solid;
     outline-offset: -3px;
     color: #bec1bf;
@@ -1941,7 +1941,7 @@ searchbar,
     background-image: none;
     border-color: rgba(190, 193, 191, 0.22);
     outline-color: rgba(64, 70, 79, 0.5);
-    outline-width: 20px;
+    outline-width: 1px;
     outline-style: solid;
     outline-offset: -3px;
     color: #bec1bf;
@@ -2049,11 +2049,11 @@ headerbar.selection-mode,
   headerbar.selection-mode .title,
   .titlebar:not(headerbar).selection-mode .title {
     font-weight: bold;
-    padding: 0 40px; }
+    padding: 0 4px; }
   headerbar.selection-mode .subtitle,
   .titlebar:not(headerbar).selection-mode .subtitle {
     font-size: smaller;
-    padding: 0 40px; }
+    padding: 0 4px; }
   headerbar.selection-mode button, headerbar.selection-mode button.nautilus-circular-button.image-button,
   .titlebar:not(headerbar).selection-mode button {
     background-color: #40464f;
@@ -2156,7 +2156,7 @@ headerbar.selection-mode,
       background-image: none;
       border-color: rgba(190, 193, 191, 0.22);
       outline-color: rgba(64, 70, 79, 0.5);
-      outline-width: 20px;
+      outline-width: 1px;
       outline-style: solid;
       outline-offset: -3px;
       color: #bec1bf;
@@ -2354,7 +2354,7 @@ headerbar.selection-mode,
       background-image: image(mix(#bec1bf,#40464f,0.9)); }
     headerbar.selection-mode button.image-button,
     .titlebar:not(headerbar).selection-mode button.image-button {
-      padding: 20px; }
+      padding: 2px; }
   headerbar.selection-mode viewswitcher button, headerbar.selection-mode viewswitcher button.nautilus-circular-button.image-button,
   headerbar.selection-mode .linked > button,
   .titlebar:not(headerbar).selection-mode viewswitcher button,
@@ -2489,7 +2489,7 @@ headerbar.selection-mode,
       box-shadow: inset 1px 0 rgba(46, 53, 46, 0.06), inset 0 1px rgba(46, 53, 46, 0.07), inset -1px 0 rgba(46, 53, 46, 0.06); }
   headerbar.selection-mode box button.image-button,
   .titlebar:not(headerbar).selection-mode box button.image-button {
-    padding: 20px 24px; }
+    padding: 2px 6px; }
   headerbar.selection-mode separator, headerbar.selection-mode separator:disabled,
   .titlebar:not(headerbar).selection-mode separator,
   .titlebar:not(headerbar).selection-mode separator:disabled {
@@ -2598,7 +2598,7 @@ headerbar.selection-mode,
       background-image: none;
       border-color: rgba(190, 193, 191, 0.22);
       outline-color: rgba(64, 70, 79, 0.5);
-      outline-width: 20px;
+      outline-width: 1px;
       outline-style: solid;
       outline-offset: -3px;
       color: #bec1bf;
@@ -2952,7 +2952,7 @@ colorswatch#editor-color-sample {
     border-radius: 3.5px; }
 
 button.color, button.color.nautilus-circular-button.image-button {
-  padding: 20px; }
+  padding: 2px; }
   button.color colorswatch:only-child, button.color colorswatch:only-child overlay {
     border-radius: 3px; }
   button.color:disabled colorswatch:only-child, button.color:backdrop colorswatch:only-child, button.color:active colorswatch:only-child, button.color:checked colorswatch:only-child {
@@ -2989,7 +2989,7 @@ list {
     background-color: #282a2e;
     border-color: mix(#282a2e,mix(#282a2e,#f7f8f7,0.18),0.9); }
   list row {
-    padding: 20px; }
+    padding: 2px; }
 
 row {
   transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
@@ -3011,7 +3011,7 @@ row {
     background-color: #40464f; }
 
 flowbox flowboxchild {
-  padding: 20px;
+  padding: 2px;
   border-radius: 3px; }
   flowbox flowboxchild:selected {
     outline-offset: -2px; }
@@ -3097,7 +3097,7 @@ infobar {
       background-image: none;
       border-color: rgba(40, 42, 46, 0.32);
       outline-color: rgba(64, 70, 79, 0.5);
-      outline-width: 20px;
+      outline-width: 1px;
       outline-style: solid;
       outline-offset: -3px;
       color: #282a2e;
@@ -3232,7 +3232,7 @@ infobar {
       background-image: none;
       border-color: rgba(40, 42, 46, 0.32);
       outline-color: rgba(64, 70, 79, 0.5);
-      outline-width: 20px;
+      outline-width: 1px;
       outline-style: solid;
       outline-offset: -3px;
       color: #282a2e;
@@ -3367,7 +3367,7 @@ infobar {
       background-image: none;
       border-color: rgba(40, 42, 46, 0.32);
       outline-color: rgba(64, 70, 79, 0.5);
-      outline-width: 20px;
+      outline-width: 1px;
       outline-style: solid;
       outline-offset: -3px;
       color: #282a2e;
@@ -3502,7 +3502,7 @@ infobar {
       background-image: none;
       border-color: rgba(40, 42, 46, 0.32);
       outline-color: rgba(64, 70, 79, 0.5);
-      outline-width: 20px;
+      outline-width: 1px;
       outline-style: solid;
       outline-offset: -3px;
       color: #282a2e;
@@ -3657,10 +3657,10 @@ infobar {
     color: #bec1bf; }
   #login_window entry image.left,
   #XfceNotifyWindow entry image.left, entry image.left {
-    padding-right: 20px; }
+    padding-right: 2px; }
   #login_window entry image.right,
   #XfceNotifyWindow entry image.right, entry image.right {
-    padding-left: 20px; }
+    padding-left: 2px; }
   #login_window entry.warning,
   #XfceNotifyWindow entry.warning, popover.background entry.warning, entry.warning {
     color: #282a2e;
@@ -3727,8 +3727,8 @@ menubar, .menubar {
   background-image: none;
   color: #f7f8f7; }
   menubar > menuitem, .menubar > menuitem {
-    min-height: 50px;
-    padding: 22px 24px;
+    min-height: 14px;
+    padding: 4px 6px;
     border: 1px solid transparent;
     background-color: transparent;
     background-image: none;
@@ -3748,7 +3748,7 @@ menu,
 .menu,
 .context-menu {
   border-radius: 0;
-  padding: 20px;
+  padding: 2px;
   background-color: #32363c;
   color: #f7f8f7;
   border: 1px solid mix(#32363c,#f7f8f7,0.21); }
@@ -3763,7 +3763,7 @@ menu,
   .menu separator, .csd .menu separator,
   .context-menu separator, .csd .context-menu separator {
     background-image: image(mix(#32363c,#f7f8f7,0.18));
-    margin: 18px 0; }
+    margin: 0px 0; }
   menu .separator, .csd menu .separator,
   .menu .separator, .csd .menu .separator,
   .context-menu .separator, .csd .context-menu .separator {
@@ -3771,9 +3771,9 @@ menu,
   menu menuitem,
   .menu menuitem,
   .context-menu menuitem {
-    min-height: 50px;
+    min-height: 14px;
     min-width: 40px;
-    padding: 22px;
+    padding: 4px;
     border-radius: 0; }
     menu menuitem:active, menu menuitem:hover,
     .menu menuitem:active,
@@ -3901,7 +3901,7 @@ menu,
   .context-menu > arrow {
     min-height: 16px;
     min-width: 16px;
-    padding: 20px;
+    padding: 2px;
     background-color: #32363c;
     border-radius: 0; }
     menu > arrow.top,
@@ -3959,7 +3959,7 @@ menuitem entry {
   background-color: #32363c;
   background-image: none;
   border-color: mix(#f7f8f7,#32363c,0.8);
-  padding: 22px 24.2857142857px;
+  padding: 4px 2.4285714286px;
   color: #f7f8f7;
   caret-color: #2ad42a;
   -gtk-secondary-caret-color: #ff00bc; }
@@ -3983,7 +3983,7 @@ menuitem entry {
  ! Popover
 **********/
 popover.background {
-  padding: 17px;
+  padding: 0px;
   border-radius: 3px;
   background-clip: border-box;
   background-color: #32363c;
@@ -4032,7 +4032,7 @@ popover.background {
     background-color: #282a2e;
     background-image: none;
     border-color: mix(#f7f8f7,#282a2e,0.8);
-    padding: 22px 24.2857142857px;
+    padding: 4px 2.4285714286px;
     color: #f7f8f7;
     caret-color: #2ad42a;
     -gtk-secondary-caret-color: #ff00bc; }
@@ -4114,7 +4114,7 @@ popover.background {
       background-image: none;
       border-color: rgba(247, 248, 247, 0.22);
       outline-color: rgba(64, 70, 79, 0.5);
-      outline-width: 20px;
+      outline-width: 1px;
       outline-style: solid;
       outline-offset: -3px;
       color: #f7f8f7;
@@ -4205,8 +4205,8 @@ popover.background {
 
 modelbutton.flat,
 menuitem.button.flat {
-  padding: 20px;
-  padding-left: 20px;
+  padding: 2px;
+  padding-left: 3px;
   transition: none; }
   modelbutton.flat:hover,
   menuitem.button.flat:hover {
@@ -4263,11 +4263,11 @@ tooltip * {
 messagedialog, .message-dialog, .prompt {
   -GtkDialog-content-area-border: 0;
   -GtkDialog-action-area-border: 0;
-  -GtkDialog-button-spacing: 20px;
+  -GtkDialog-button-spacing: 2px;
   margin: 0;
   padding: 0; }
   messagedialog .dialog-action-box, .message-dialog .dialog-action-box, .prompt .dialog-action-box {
-    margin: 40px; }
+    margin: 4px; }
 
 printdialog paper {
   color: #f7f8f7;
@@ -4279,7 +4279,7 @@ printdialog paper {
     border-color: mix(#282a2e,mix(#282a2e,#f7f8f7,0.18),0.9); }
 
 printdialog .dialog-action-box {
-  margin: 40px; }
+  margin: 4px; }
 
 /*********************
  ! App notifications *
@@ -4289,7 +4289,7 @@ frame.app-notification {
   border-color: rgba(40, 43, 48, 0.8);
   border-width: 0 1px 1px;
   border-radius: 0 0 3px 3px;
-  padding: 40px;
+  padding: 4px;
   background-color: rgba(50, 54, 60, 0.8);
   background-image: none;
   color: #f7f8f7; }
@@ -4356,7 +4356,7 @@ frame.app-notification {
       background-image: none;
       border-color: rgba(247, 248, 247, 0.22);
       outline-color: rgba(64, 70, 79, 0.5);
-      outline-width: 20px;
+      outline-width: 1px;
       outline-style: solid;
       outline-offset: -3px;
       color: #f7f8f7;
@@ -4493,7 +4493,7 @@ GtkBubbleWindow {
  ! Font-viewer *
 ****************/
 SushiFontWidget {
-  padding: 20px 40px; }
+  padding: 2px 4px; }
 
 /*************
  ! Gucharmap *
@@ -4515,8 +4515,8 @@ EPreviewPane .entry {
 entry.entry.pin-entry {
   font-style: normal;
   font-size: 50px;
-  padding-left: 100px;
-  padding-right: 100px; }
+  padding-left: 10px;
+  padding-right: 10px; }
 
 label.pin-label {
   font-style: normal;
@@ -4529,9 +4529,9 @@ label.pin-label {
   min-width: 20px;
   min-height: 24px;
   margin-top: 2px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-bottom: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
   color: #f7f8f7;
   background-color: #282a2e;
   border: 1px solid;
@@ -4639,7 +4639,7 @@ notebook {
   notebook > stack:not(:only-child) {
     background-color: #282a2e; }
   notebook > header {
-    padding: 20px;
+    padding: 2px;
     background-color: #282a2e; }
     notebook > header.top {
       box-shadow: inset 0 -1px mix(#282a2e,#f7f8f7,0.18); }
@@ -4678,7 +4678,7 @@ notebook {
       background-image: none;
       border-color: mix(mix(#282a2e,#f7f8f7,0.18),mix(#f7f8f7,#282a2e,0.5),0.15);
       color: rgba(247, 248, 247, 0.8);
-      padding: 20px 28px;
+      padding: 2px 10px;
       min-width: 20px;
       min-height: 20px;
       outline-offset: -4px;
@@ -4729,7 +4729,7 @@ notebook {
           margin-top: 0;
           -gtk-outline-radius: 3px;
           border-radius: 3px 3px 0 0;
-          padding-top: 21px; }
+          padding-top: 3px; }
         notebook > header.top > tabs > tab:hover:not(:checked) {
           border-top-color: mix(#40464f,mix(#282a2e,#f7f8f7,0.2),0.66); }
     notebook > header.bottom {
@@ -4752,7 +4752,7 @@ notebook {
           margin-bottom: 0;
           -gtk-outline-radius: 3px;
           border-radius: 0 0 3px 3px;
-          padding-bottom: 21px; }
+          padding-bottom: 3px; }
         notebook > header.bottom > tabs > tab:hover:not(:checked) {
           border-bottom-color: mix(#40464f,mix(#282a2e,#f7f8f7,0.2),0.66); }
     notebook > header.right {
@@ -4775,7 +4775,7 @@ notebook {
           margin-right: 0;
           -gtk-outline-radius: 3px;
           border-radius: 0 3px 3px 0;
-          padding-right: 29px; }
+          padding-right: 11px; }
         notebook > header.right > tabs > tab:hover:not(:checked) {
           border-right-color: mix(#40464f,mix(#282a2e,#f7f8f7,0.2),0.66); }
     notebook > header.left {
@@ -4798,7 +4798,7 @@ notebook {
           margin-left: 0;
           -gtk-outline-radius: 3px;
           border-radius: 3px 0 0 3px;
-          padding-left: 29px; }
+          padding-left: 11px; }
         notebook > header.left > tabs > tab:hover:not(:checked) {
           border-left-color: mix(#40464f,mix(#282a2e,#f7f8f7,0.2),0.66); }
 
@@ -4925,7 +4925,7 @@ button.osd, button.osd.nautilus-circular-button.image-button,
     background-image: none;
     border-color: rgba(247, 248, 247, 0.22);
     outline-color: rgba(64, 70, 79, 0.5);
-    outline-width: 20px;
+    outline-width: 1px;
     outline-style: solid;
     outline-offset: -3px;
     color: #f7f8f7;
@@ -5129,7 +5129,7 @@ button.osd, button.osd.nautilus-circular-button.image-button,
 
 toolbar.osd {
   -GtkToolbar-button-relief: normal;
-  padding: 20px;
+  padding: 2px;
   border: 1px solid rgba(40, 43, 48, 0.8);
   border-radius: 3px;
   background-color: rgba(50, 54, 60, 0.8);
@@ -5271,7 +5271,7 @@ progressbar.osd {
       background-image: none;
       border-color: rgba(247, 248, 247, 0.22);
       outline-color: rgba(64, 70, 79, 0.5);
-      outline-width: 20px;
+      outline-width: 1px;
       outline-style: solid;
       outline-offset: -3px;
       color: #f7f8f7;
@@ -5472,7 +5472,7 @@ progressbar.osd {
     background-color: #32363c;
     background-image: none;
     border-color: mix(#f7f8f7,#32363c,0.8);
-    padding: 22px 24.2857142857px;
+    padding: 4px 2.4285714286px;
     color: #f7f8f7;
     caret-color: #2ad42a;
     -gtk-secondary-caret-color: #ff00bc; }
@@ -5769,7 +5769,7 @@ progressbar.osd {
         background-image: none;
         border-color: rgba(247, 248, 247, 0.22);
         outline-color: rgba(64, 70, 79, 0.5);
-        outline-width: 20px;
+        outline-width: 1px;
         outline-style: solid;
         outline-offset: -3px;
         color: #f7f8f7;
@@ -6097,7 +6097,7 @@ progressbar.osd {
       background-image: none;
       border-color: rgba(247, 248, 247, 0.22);
       outline-color: rgba(64, 70, 79, 0.5);
-      outline-width: 20px;
+      outline-width: 1px;
       outline-style: solid;
       outline-offset: -3px;
       color: #f7f8f7;
@@ -6438,10 +6438,10 @@ progressbar {
   color: rgba(247, 248, 247, 0.6); }
   progressbar.horizontal trough,
   progressbar.horizontal progress {
-    min-height: 23px; }
+    min-height: 5px; }
   progressbar.vertical trough,
   progressbar.vertical progress {
-    min-width: 23px; }
+    min-width: 5px; }
   progressbar trough {
     border: 1px solid mix(#282a2e,#f7f8f7,0.17);
     background-color: mix(#282a2e,#282a2e,0.08);
@@ -6510,9 +6510,9 @@ levelbar block {
     box-shadow: none; }
 
 scale {
-  min-height: 27px;
-  min-width: 27px;
-  padding: 20px; }
+  min-height: 9px;
+  min-width: 9px;
+  padding: 2px; }
   scale.horizontal trough {
     padding: 0 3px; }
   scale.horizontal highlight, scale.horizontal fill {
@@ -6522,18 +6522,18 @@ scale {
   scale.vertical highlight, scale.vertical fill {
     margin: -4px 0; }
   scale slider {
-    min-height: 49px;
-    min-width: 49px;
-    margin: -24px; }
+    min-height: 13px;
+    min-width: 13px;
+    margin: -6px; }
   scale.fine-tune slider {
-    margin: -24px; }
+    margin: -6px; }
   scale.fine-tune highlight {
     background-color: #464d57; }
   scale.fine-tune fill,
   scale.fine-tune highlight,
   scale.fine-tune trough {
-    border-radius: 22px;
-    -gtk-outline-radius: 24px; }
+    border-radius: 4px;
+    -gtk-outline-radius: 6px; }
   scale trough {
     outline-offset: 2px;
     -gtk-outline-radius: 4.5px;
@@ -6632,7 +6632,7 @@ scale {
   scale.color highlight, scale.color fill {
     margin: 0; }
   scale.color.horizontal {
-    padding: 0 0 23px; }
+    padding: 0 0 5px; }
     scale.color.horizontal trough {
       border-top-left-radius: 0;
       border-top-right-radius: 0; }
@@ -6640,7 +6640,7 @@ scale {
       margin-bottom: 0;
       margin-top: 0; }
   scale.color.vertical:dir(ltr) {
-    padding: 0 0 0 23px; }
+    padding: 0 0 0 5px; }
     scale.color.vertical:dir(ltr) trough {
       border-bottom-right-radius: 0;
       border-top-right-radius: 0; }
@@ -6648,7 +6648,7 @@ scale {
       margin-left: 0;
       margin-right: 0; }
   scale.color.vertical:dir(rtl) {
-    padding: 0 23px 0 0; }
+    padding: 0 5px 0 0; }
     scale.color.vertical:dir(rtl) trough {
       border-bottom-left-radius: 0;
       border-top-left-radius: 0; }
@@ -6773,10 +6773,10 @@ scrollbar {
     border-style: none; }
 
 stacksidebar row {
-  padding: 40px 20px; }
+  padding: 4px 2px; }
   stacksidebar row > label {
-    padding-left: 20px;
-    padding-right: 20px; }
+    padding-left: 2px;
+    padding-right: 2px; }
   stacksidebar row.needs-attention > label {
     background-size: 6px 6px, 0 0; }
 
@@ -6787,7 +6787,7 @@ placessidebar row {
   min-height: 32px;
   padding: 0; }
   placessidebar row > revealer {
-    padding: 0 40px; }
+    padding: 0 4px; }
   placessidebar row:selected {
     color: #bec1bf; }
   placessidebar row:disabled {
@@ -6801,11 +6801,11 @@ placessidebar row {
   placessidebar row image.sidebar-icon {
     opacity: 0.7; }
     placessidebar row image.sidebar-icon:dir(ltr) {
-      padding-right: 42px;
-      padding-left: 20px; }
+      padding-right: 6px;
+      padding-left: 2px; }
     placessidebar row image.sidebar-icon:dir(rtl) {
-      padding-left: 42px;
-      padding-right: 20px; }
+      padding-left: 6px;
+      padding-right: 2px; }
   placessidebar row label.sidebar-label:dir(ltr) {
     padding-right: 2px; }
   placessidebar row label.sidebar-label:dir(rtl) {
@@ -6908,9 +6908,9 @@ spinner {
 ************************/
 radio {
   background-image: none;
-  min-width: 50px;
-  min-height: 50px;
-  margin-right: 20px; }
+  min-width: 14px;
+  min-height: 14px;
+  margin-right: 2px; }
   radio:disabled {
     -gtk-icon-source: url("../assets/radio-unchecked-insensitive.svg"); }
   radio:checked, radio:active {
@@ -6940,9 +6940,9 @@ radio {
 
 check {
   background-image: none;
-  min-width: 50px;
-  min-height: 50px;
-  margin-right: 20px; }
+  min-width: 14px;
+  min-height: 14px;
+  margin-right: 2px; }
   check:disabled {
     -gtk-icon-source: url("../assets/checkbox-unchecked-insensitive.svg"); }
   check:checked, check:active {
@@ -6990,7 +6990,7 @@ radio {
 
 radio:dir(rtl), check:dir(rtl) {
   margin-right: 0;
-  margin-left: 20px; }
+  margin-left: 2px; }
 
 .view.content-view.check:not(list), iconview.content-view.check:not(list) {
   -gtk-icon-shadow: none;
@@ -7037,12 +7037,12 @@ radio:dir(rtl), check:dir(rtl) {
 *********/
 switch {
   border-radius: 3px;
-  padding: 19px;
+  padding: 1px;
   border: 0;
   outline: none;
   transition: background-color .3s linear;
-  min-width: 146px;
-  min-height: 58px;
+  min-width: 74px;
+  min-height: 22px;
   background-color: mix(#282a2e,#282a2e,0.3);
   color: #f7f8f7;
   box-shadow: inset 1px -1px 0 rgba(46, 53, 46, 0.06), inset -1px 1px 0 rgba(46, 53, 46, 0.06);
@@ -7137,7 +7137,7 @@ treeview entry.flat, treeview entry {
     border-color: #40464f; }
 
 treeview.view header button:active, treeview.view header button:hover, treeview.view header button, treeview.view header button.nautilus-circular-button.image-button {
-  padding: 18px 21px;
+  padding: 0px 3px;
   border-radius: 0;
   text-shadow: none;
   border-top-color: transparent;
@@ -7335,7 +7335,7 @@ decoration {
   border-width: 0;
   box-shadow: 0 3px 9px 1px rgba(92, 106, 92, 0.7), 0 0 0 0px #f0c674;
   /* this is used for the resize cursor area */
-  margin: 60px; }
+  margin: 6px; }
   decoration:backdrop {
     box-shadow: 0 3px 9px 1px transparent, 0 2px 6px 2px rgba(92, 106, 92, 0.4), 0 0 0 0px #CCCCCC;
     transition: 200ms ease-out; }
@@ -7550,7 +7550,7 @@ workbench.csd > stack.titlebar:not(headerbar) {
   background-color: rgba(92, 106, 92, 0.3);
   border-color: rgba(41, 43, 48, 0.9);
   border-radius: 7px;
-  padding: 20px;
+  padding: 2px;
   color: #292b30; }
 
 .lightdm.menu {
@@ -7564,10 +7564,10 @@ workbench.csd > stack.titlebar:not(headerbar) {
     color: #292b30; }
 
 .lightdm.menubar *, .lightdm.menubar.menuitem {
-  padding: 17px; }
+  padding: 0px; }
 
 .lightdm.option-button {
-  padding: 20px;
+  padding: 2px;
   background: none;
   border: 0; }
 
@@ -7591,7 +7591,7 @@ workbench.csd > stack.titlebar:not(headerbar) {
   background-color: rgba(92, 106, 92, 0.3);
   border-color: rgba(41, 43, 48, 0.6);
   border-radius: 7px;
-  padding: 22px;
+  padding: 4px;
   color: #292b30;
   text-shadow: none; }
 
@@ -7632,7 +7632,7 @@ GeditWindow .pane-separator {
   background-color: #282a2e;
   color: mix(#f7f8f7,#282a2e,0.1); }
   .gedit-document-panel list row {
-    padding: 20px; }
+    padding: 2px; }
     .gedit-document-panel list row button, .gedit-document-panel list row button.nautilus-circular-button.image-button {
       padding: 1px;
       border-radius: 3px;
@@ -7686,7 +7686,7 @@ statusbar GeditSmallButton, GeditStatusMenuButton {
       color: #f7f8f7; }
 
 GeditViewFrame .gedit-search-slider {
-  padding: 20px;
+  padding: 2px;
   border-radius: 0 0 3px 3px;
   border-width: 0 1px 1px;
   border-style: solid;
@@ -7698,14 +7698,14 @@ GeditViewFrame .gedit-search-slider {
     color: #282a2e; }
 
 GeditFileBrowserWidget .toolbar {
-  padding: 10px;
+  padding: 1px;
   border-top: 0;
   background-color: #282a2e;
   background-image: none; }
 
 .gedit-search-entry-occurrences-tag {
-  margin: 10px;
-  padding: 10px;
+  margin: 1px;
+  padding: 1px;
   color: mix(#f7f8f7,#282a2e,0.5); }
 
 .gedit-bottom-panel-paned,
@@ -7748,8 +7748,8 @@ paned.titlebar {
 .nautilus-window .searchbar-container {
   margin-top: -1px; }
   .nautilus-window .searchbar-container searchbar {
-    padding-top: 17px;
-    padding-bottom: 18px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     border-bottom: 1px solid mix(#282a2e,#f7f8f7,0.18); }
 
 .disk-space-display {
@@ -7804,13 +7804,13 @@ paned.titlebar {
       border-color: currentColor;
       -GtkWidget-window-dragging: true; }
     .nemo-window toolbar.primary-toolbar button.image-button {
-      padding: 0 25px; }
+      padding: 0 7px; }
     .nemo-window toolbar combobox, .nemo-window toolbar button, .nemo-window toolbar button.nautilus-circular-button.image-button {
-      padding: 20px; }
+      padding: 2px; }
       .nemo-window toolbar combobox.text-button, .nemo-window toolbar button.text-button {
-        padding: 20px; }
+        padding: 2px; }
       .nemo-window toolbar combobox.image-button, .nemo-window toolbar button.image-button {
-        padding: 20px; }
+        padding: 2px; }
     .nemo-window toolbar toolitem stack {
       margin-left: 15px; }
       .nemo-window toolbar toolitem stack widget button, .nemo-window toolbar toolitem stack widget button.nautilus-circular-button.image-button {
@@ -7835,7 +7835,7 @@ paned.titlebar {
   .nemo-window grid > widget:last-child button {
     min-height: 16px;
     min-width: 16px;
-    padding: 19px 38px; }
+    padding: 1px 2px; }
   .nemo-window grid > widget:last-child button:first-child + button {
     margin-right: 72px; }
   .nemo-window grid > widget:last-child > box > scale {
@@ -7847,8 +7847,8 @@ paned.titlebar {
     .nemo-window .sidebar .frame {
       border: 0; }
     .nemo-window .sidebar image {
-      padding-left: 20px;
-      padding-right: 20px; }
+      padding-left: 2px;
+      padding-right: 2px; }
     .nemo-window .sidebar .nemo-places-sidebar, .nemo-window .sidebar .nemo-places-sidebar .view, .nemo-window .sidebar .nemo-places-sidebar iconview {
       background-color: mix(#282a2e,#282a2e,0.5); }
     .nemo-window .sidebar .nemo-places-sidebar .view, .nemo-window .sidebar .nemo-places-sidebar iconview {
@@ -7864,8 +7864,8 @@ paned.titlebar {
     .nemo-window .sidebar + separator + box .primary-toolbar {
       background-color: #27292d;
       background-image: none;
-      padding-top: 17px;
-      padding-bottom: 17px;
+      padding-top: 0px;
+      padding-bottom: 0px;
       border-bottom: 1px solid mix(#282a2e,#f7f8f7,0.18); }
       .nemo-window .sidebar + separator + box .primary-toolbar button:nth-child(2), .nemo-window .sidebar + separator + box .primary-toolbar button.nautilus-circular-button.image-button:nth-child(2) {
         border-right: 0;
@@ -7897,7 +7897,7 @@ paned.titlebar {
 GtkWindow > GtkVBox > .dock, GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar {
   background-color: #282a2e;
   background-image: none;
-  padding: 20px;
+  padding: 2px;
   border: 0;
   color: #f7f8f7; }
 
@@ -7945,7 +7945,7 @@ UnityDecoration {
     border: 1px solid #f0c674;
     border-bottom: 0;
     border-radius: 3px 3px 0 0;
-    padding: 1px 23px 0;
+    padding: 1px 5px 0;
     background-color: #32363c;
     color: #f7f8f7;
     text-shadow: none; }
@@ -7997,7 +7997,7 @@ SheetStyleDialog.unity-force-quit {
   text-shadow: 0 1px rgba(92, 106, 92, 0.5);
   -gtk-icon-shadow: 0 1px rgba(92, 106, 92, 0.5); }
   #panel_window menubar {
-    padding-left: 20px; }
+    padding-left: 2px; }
     #panel_window menubar, #panel_window menubar > menuitem {
       background-color: transparent;
       background-image: none;
@@ -8017,7 +8017,7 @@ SheetStyleDialog.unity-force-quit {
       font-weight: normal; }
 
 #content_frame {
-  padding-bottom: 60px; }
+  padding-bottom: 6px; }
 
 #login_window, #shutdown_dialog, #restart_dialog {
   border-style: none;
@@ -8093,7 +8093,7 @@ SheetStyleDialog.unity-force-quit {
     background-image: none;
     border-color: rgba(247, 248, 247, 0.22);
     outline-color: rgba(64, 70, 79, 0.5);
-    outline-width: 20px;
+    outline-width: 1px;
     outline-style: solid;
     outline-offset: -3px;
     color: #f7f8f7;
@@ -8163,7 +8163,7 @@ SheetStyleDialog.unity-force-quit {
   background-color: #32363c;
   background-image: none;
   border-color: mix(#f7f8f7,#32363c,0.8);
-  padding: 22px 24.2857142857px;
+  padding: 4px 2.4285714286px;
   color: #f7f8f7;
   caret-color: #2ad42a;
   -gtk-secondary-caret-color: #ff00bc; }
@@ -8203,7 +8203,7 @@ SheetStyleDialog.unity-force-quit {
   box-shadow: inset 1px 0 rgba(46, 53, 46, 0.07), inset 0 1px rgba(46, 53, 46, 0.08), inset -1px 0 rgba(46, 53, 46, 0.07), inset 0 -1px rgba(46, 53, 46, 0.05); }
 
 #buttonbox_frame {
-  padding-top: 40px;
+  padding-top: 4px;
   padding-bottom: 0;
   border-style: none;
   border-bottom-left-radius: 3px;
@@ -8276,7 +8276,7 @@ SheetStyleDialog.unity-force-quit {
     background-image: none;
     border-color: rgba(40, 42, 46, 0.32);
     outline-color: rgba(64, 70, 79, 0.5);
-    outline-width: 20px;
+    outline-width: 1px;
     outline-style: solid;
     outline-offset: -3px;
     color: #282a2e;
@@ -8406,7 +8406,7 @@ SheetStyleDialog.unity-force-quit {
     background-image: none;
     border-color: rgba(40, 42, 46, 0.32);
     outline-color: rgba(64, 70, 79, 0.5);
-    outline-width: 20px;
+    outline-width: 1px;
     outline-style: solid;
     outline-offset: -3px;
     color: #282a2e;

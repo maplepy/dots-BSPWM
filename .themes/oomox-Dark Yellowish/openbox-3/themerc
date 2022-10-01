@@ -146,9 +146,9 @@ menu.title.text.font:shadow=n
 
 
 # Everything else
-border.width: 20
+border.width: 2
 padding.width: 8
-padding.height: 20
+padding.height: 2
 window.handle.width: 0
 window.client.padding.width: 0
 window.label.text.justify: center
