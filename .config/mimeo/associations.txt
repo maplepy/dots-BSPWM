@@ -1,3 +1,4 @@
+# https://xyne.dev/projects/mimeo/
 /usr/bin/firefox %U
   ^https?://example
   ^https?://(www.)?youtube.com/watch\?.*v=
