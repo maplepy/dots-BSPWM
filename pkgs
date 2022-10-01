@@ -14,9 +14,11 @@ fisher
 fzf
 gnome-disk-utility
 gpick
+libappimage
 librewolf-bin
 lsd
 ly
+maim
 man-db
 man-pages
 meld
@@ -40,5 +42,6 @@ themix-full-git
 thunar
 tldr
 ttf-dejavu
+xclip
 #xdg-utils-mimeo
 yay
