@@ -49,24 +49,26 @@ case "$1" in
     init)
         pactl set-source-volume $mic_source 80%
         pactl set-source-mute   $mic_source 1
-        polybar-msg action "#mic.hook.1"
+        polybar-msg action "#mic.hook.1" > /dev/null
     ;;
     toggle)
         pactl set-source-mute   $mic_source toggle
-        polybar-msg action "#mic.hook.1"
+        polybar-msg action "#mic.hook.1" > /dev/null
     ;;
-    raise)
+    raise|inc)
         pactl set-source-mute   $mic_source 0
         pactl set-source-volume $mic_source +5%
-        polybar-msg action "#mic.hook.1"
+        polybar-msg action "#mic.hook.1" > /dev/null
+        canberra-gtk-play -i audio-volume-change -d "changeVolume"
     ;;
-    lower)
+    lower|dec)
         pactl set-source-mute   $mic_source 0
         pactl set-source-volume $mic_source -5%
-        polybar-msg action "#mic.hook.1"
+        polybar-msg action "#mic.hook.1" > /dev/null
+        canberra-gtk-play -i audio-volume-change -d "changeVolume"
     ;;
     *)
-        echo "Available commands: status, init, toggle, raise, lower"
+        echo "Available commands: status, init, toggle, raise|inc, lower|dec"
     ;;
 esac
 
