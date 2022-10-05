@@ -10,8 +10,7 @@ makepkg -si
 # Install pkgs
 yay -S --needed - < ~/pkgs
 
-# Install fish shell
-yay -S fish fisher
+# Install fish plugins
 fisher install franciscolourenco/done
 fisher install gazorby/fish-abbreviation-tips
 fisher install jorgebucaran/autopair.fish
@@ -30,5 +29,6 @@ sudo ufw enable
 sudo systemctl enable --now ufw.service
 
 # Auto update mirrors (reflector)
+rm /etc/xdg/reflector/reflector.conf
 ln ~/.config/etc/reflector.conf /etc/xdg/reflector/reflector.conf
 sudo systemctl enable --now reflector.service
