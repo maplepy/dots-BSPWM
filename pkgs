@@ -43,3 +43,5 @@ tldr
 ttf-dejavu
 ufw
 xclip
+xorg-server
+xorg-xinit
