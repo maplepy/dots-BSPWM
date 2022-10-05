@@ -24,4 +24,5 @@ fisher install IlanCosman/tide@v5
 ### Enable services
 
 # Auto update mirrors
+ln ~/.config/etc/reflector.conf /etc/xdg/reflector/reflector.conf
 sudo systemctl enable --now reflector.service
