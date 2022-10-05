@@ -4,7 +4,6 @@ bspwm
 btop
 code
 code-marketplace
-digikam
 downgrade
 dunst
 feh
@@ -32,7 +31,6 @@ pacman
 pacman-contrib
 pavucontrol
 pcmanfm
-# phototonic
 picom
 polybar
 reflector
