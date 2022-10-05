@@ -7,7 +7,6 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 cd
-rm ~/yay/ -rf
 
 # Install dotfiles
 cd
@@ -31,7 +30,7 @@ $dots_cmd checkout
 sudo sed -i 's/#Color/Color/' /etc/pacman.conf
 
 # Install pkgs
-cd dots-bspwm
+wget https://raw.githubusercontent.com/maplepy/dots-BSPWM/master/pkgs
 yay -S --sudoloop --noconfirm --needed - < pkgs
 
 # Change shell to fish for user and root
@@ -58,12 +57,15 @@ sudo systemctl enable --now ufw.service
 
 # Git config
 printf "\n\n"
-read -rp "Github mail: " -i "github." github_mail
-ssh-keygen -t ed25519 -C "$github_mail"
+read -rp "Want to setup the git config? (y/N)" git_ask
+if [[ "$git_ask" == "y" ]]; then
+    read -rp "Github mail: " -i "github." github_mail
+    ssh-keygen -t ed25519 -C "$github_mail"
 
-open "https://github.com/settings/keys"
-$dots_cmd remote set-url origin git@github.com:maplepy/dots-bspwm
-.git
+    xdg-open "https://github.com/settings/keys"
+    $dots_cmd remote set-url origin git@github.com:maplepy/dots-bspwm
+    .git
+fi
 
 # Auto update mirrors (reflector)
 sudo rm /etc/xdg/reflector/reflector.conf
