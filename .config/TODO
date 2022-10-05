@@ -4,8 +4,27 @@ https://aur.archlinux.org/packages/clight
 or https://aur.archlinux.org/packages/wluma
 
 # Rofi
-
-# Microphone module
+https://man.archlinux.org/man/rofi-theme.5
+https://wiki.archlinux.org/title/Rofi
+https://github.com/adi1090x/rofi
+https://gitlab.com/vahnrr/rofi-menus
 
 # Clean unused pkgs (orphans)
 $ pacman -Qtdq | pacman -Rns -
+
+# Theme
+https://github.com/horst3180/arc-theme/blob/master/HACKING.md
+https://www.linux.org/threads/installing-obtaining-and-making-gtk-themes.11811/
+https://coolors.co/f1cb7e-8edce6-d5dcf9-a7b0ca-1c1c21
+
+# MPV
+https://kokomins.wordpress.com/2019/10/14/mpv-config-guide/#gpu-selection
+
+# Devour
+https://github.com/salman-abedin/devour
+
+# BSPWM External rules
+https://github.com/baskerville/bspwm/blob/master/examples/external_rules/external_rules
+
+# Check it out someday
+http://thedarnedestthing.com/bspwm
