@@ -12,10 +12,9 @@ firefox
 fish
 fisher
 fzf
-gnome-disk-utility
+gparted
 gpick
 libappimage
-librewolf-bin
 lsd
 ly
 maim
@@ -44,5 +43,3 @@ tldr
 ttf-dejavu
 ufw
 xclip
-#xdg-utils-mimeo
-yay
