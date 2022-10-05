@@ -318,7 +318,7 @@
     timeout = 6
 
 [urgency_normal]
-    frame_color = "#F0C674"
+    frame_color = "#F1CB7E"
     foreground = "#f7f8f7"
     highlight = "#444140"
     timeout = 10
