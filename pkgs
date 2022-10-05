@@ -29,7 +29,8 @@ nsxiv
 pacman
 pacman-contrib
 pavucontrol
-phototonic
+pcmanfm
+# phototonic
 picom
 polybar
 reflector
@@ -37,7 +38,6 @@ rofi
 sed
 spotify
 sxhkd
-themix-full-git
 thunar
 tldr
 ttf-dejavu
