@@ -26,6 +26,8 @@ $dots_cmd config --local status.showUntrackedFiles no
 printf "\nSuccessfully initialised the dotfiles repo\n"
 $dots_cmd checkout
 
+sleep 5
+
 # Use color for pacman and yay
 sudo sed -i 's/#Color/Color/' /etc/pacman.conf
 
