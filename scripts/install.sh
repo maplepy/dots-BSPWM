@@ -1,16 +1,19 @@
 #!/bin/bash
 
 # Install yay
-sudo pacman -S git base-devel
+sudo pacman -S --needed git bspwm sxhkd xorg-xinit
 cd
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
+cd
+rm ~/yay/ -rf
 
 # Install dotfiles
 cd
 read -rep "Dotfiles folder name: " -i ".dotfiles" folder
-read -rp "Git repo: " -i "https://github.com/maplepy/dots-BSPWM" repo
+# read -rp "Git repo: " -i "https://github.com/maplepy/dots-BSPWM" repo
+read -rp "Git repo: " -i "git@github.com:maplepy/dots-BSPWM.git" repo
 dots_cmd="/usr/bin/git --git-dir=$HOME/$folder/ --work-tree=$HOME"
 
 echo "Initialising dotfiles folder to $HOME/$folder/"
@@ -30,7 +33,6 @@ sudo sed -i 's/#Color/Color/' /etc/pacman.conf
 # Install pkgs
 cd dots-bspwm
 yay -S --sudoloop --noconfirm --needed - < pkgs
-
 
 # Change shell to fish for user and root
 chsh -s /bin/fish
@@ -53,6 +55,15 @@ sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo ufw enable
 sudo systemctl enable --now ufw.service
+
+# Git config
+printf "\n\n"
+read -rp "Github mail: " -i "github." github_mail
+ssh-keygen -t ed25519 -C "$github_mail"
+
+open "https://github.com/settings/keys"
+$dots_cmd remote set-url origin git@github.com:maplepy/dots-bspwm
+.git
 
 # Auto update mirrors (reflector)
 sudo rm /etc/xdg/reflector/reflector.conf
