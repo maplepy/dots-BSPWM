@@ -7,8 +7,34 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
+# Install dotfiles
+cd
+read -rep "Dotfiles folder name: " -i ".dotfiles" folder
+read -rp "Git repo: " -i "https://github.com/maplepy/dots-BSPWM" repo
+dots_cmd="/usr/bin/git --git-dir=$HOME/$folder/ --work-tree=$HOME"
+
+echo "Initialising dotfiles folder to $HOME/$folder/"
+printf "\nAdding exception for git\n"
+echo "$folder" >> "$HOME/.gitignore"
+
+printf "Cloning the dotfiles repo\n"
+git clone --bare "$repo" "$HOME/$folder"
+$dots_cmd config --local status.showUntrackedFiles no
+
+printf "\nSuccessfully initialised the dotfiles repo\n"
+$dots_cmd checkout
+
+# Use color for pacman and yay
+sudo sed -i 's/#Color/Color/' /etc/pacman.conf
+
 # Install pkgs
-yay -S --needed - < ~/pkgs
+cd dots-bspwm
+yay -S --sudoloop --noconfirm --needed - < pkgs
+
+
+# Change shell to fish for user and root
+chsh -s /bin/fish
+sudo chsh -s /bin/fish
 
 # Install fish plugins
 fisher install franciscolourenco/done
@@ -29,6 +55,13 @@ sudo ufw enable
 sudo systemctl enable --now ufw.service
 
 # Auto update mirrors (reflector)
-rm /etc/xdg/reflector/reflector.conf
-ln ~/.config/etc/reflector.conf /etc/xdg/reflector/reflector.conf
+sudo rm /etc/xdg/reflector/reflector.conf
+sudo ln ~/.config/etc/reflector.conf /etc/xdg/reflector/reflector.conf
 sudo systemctl enable --now reflector.service
+
+# Disable lightdm and use ly
+sudo systemctl disable --now lightdm
+sudo systemctl enable --now ly
+
+# Reload BSPWM and notify user
+bspc wm -r && notify-send Installation "Installation should be complete now"
