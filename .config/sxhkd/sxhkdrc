@@ -14,7 +14,7 @@ super + d
 
 # Browser
 super + w
-	librewolf
+	firefox
 
 
 #
