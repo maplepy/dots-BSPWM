@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install yay
-sudo pacman -S --needed git bspwm sxhkd xorg-xinit
+sudo pacman -S --needed git
 cd
 git clone https://aur.archlinux.org/yay.git
 cd yay
