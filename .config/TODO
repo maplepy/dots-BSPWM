@@ -28,3 +28,6 @@ https://github.com/baskerville/bspwm/blob/master/examples/external_rules/externa
 
 # Check it out someday
 http://thedarnedestthing.com/bspwm
+
+# Rofi menu for reload
+Reload dunst, polybar from a rofi menu
