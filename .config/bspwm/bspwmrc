@@ -37,4 +37,5 @@ xrandr --output Virtual-1 --mode 1920x1080 --rate 144
 sh "$HOME/.config/polybar/launch.sh" &
 
 # Background
-feh quixotic-wallpaper/neoncircuit/red.png --bg-fill &
+feh ~/Downloads/00016-191680279-a-city-skyline-with-birds-a-skyscraper-with-an-red-illuminated-antenna-on-its-top.png --bg-fill
+
