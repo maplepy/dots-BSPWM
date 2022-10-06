@@ -16,7 +16,9 @@ bspc config gapless_monocle      true
 # Desktop
 bspc rule -a code-oss desktop='^1'
 bspc rule -a *:Navigator desktop='^2' # Any web browser
-bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Steam desktop='^9'
+
+# bspc rule -a Gimp desktop='^9' state=floating follow=on
 
 # Special
 bspc rule -a Pavucontrol state=floating
@@ -31,7 +33,7 @@ bspc rule -a Screenkey manage=off
 xrandr --output Virtual-1 --mode 1920x1080 --rate 144
 
 # Compositor
-# picom --no-vsync -b &
+picom --no-vsync -b &
 
 # Polybar
 sh "$HOME/.config/polybar/launch.sh" &
