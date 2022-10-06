@@ -31,14 +31,14 @@ alias pastehere='sleep 2; xdotool type "$(xclip -o -selection clipboard)"'
 #
 ## Config files
 #
+alias modalacritty='v ~/.config/alacritty/alacritty.yml'
+alias modbspwm='v ~/.config/bspwm/bspwmrc'
+alias moddunst='v ~/.config/dunst/dunstrc'
 alias modfish='v ~/.config/fish/config.fish'
 alias modgit='v ~/.gitconfig'
-alias modalacritty='v ~/.config/alacritty/alacritty.yml'
-alias modvim='v ~/.config/nvim/init.vim'
-alias modbspwm='v ~/.config/bspwm/bspwmrc'
-alias modsxhkd='v .config/sxhkd/sxhkdrc'
 alias modpolybar='v ~/.config/polybar'
-alias modeww='v ~/.config/eww'
+alias modsxhkd='v .config/sxhkd/sxhkdrc'
+alias modvim='v ~/.config/nvim/init.vim'
 
 alias fishreload='source ~/.config/fish/config.fish'
 
