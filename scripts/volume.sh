@@ -3,15 +3,10 @@
 # by Maplepy
 
 
-# # Play the volume changed sound
-# canberra-gtk-play -i audio-volume-change -d "changeVolume"
-
 # Notification tag
 mic_tag="micvolume"
 speaker_tag="speakervolume"
 
-# Source = input
-# Sink   = output
 mic_source="@DEFAULT_SOURCE@"
 speaker_source="@DEFAULT_SINK@"
 
