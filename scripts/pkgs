@@ -1,4 +1,5 @@
 alacritty
+bitwarden
 bsp-layout
 bspwm
 btop
@@ -21,6 +22,7 @@ man-db
 man-pages
 meld
 mimeo
+mpv
 neofetch
 neovim
 nerd-fonts-jetbrains-mono
@@ -36,6 +38,8 @@ polybar
 reflector
 rofi
 sed
+signal-desktop
+spicetify-cli
 spotify
 sxhkd
 thunar
