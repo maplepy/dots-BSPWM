@@ -26,6 +26,8 @@ alias yayes='yay -Syu --sudoloop --noconfirm'
 alias pacman-orphaned='sudo pacman -Rns (pacman -Qtdq)' # Remove orphaned packages
 alias pacman-purge='yay -Sc && yay -c' # Clear cache and unused packages
 alias mirror-update='curl -s "https://archlinux.org/mirrorlist/?country=FR&country=GB&country=DE&protocol=https&use_mirror_status=on" | sed -e "s/^#Server/Server/" -e "/^#/d" | rankmirrors -n 5 -'
+
+alias cleanemptydir='sudo find . -type d -empty -delete' # remove empty directories
 alias pastehere='sleep 2; xdotool type "$(xclip -o -selection clipboard)"'
 
 #
@@ -33,11 +35,13 @@ alias pastehere='sleep 2; xdotool type "$(xclip -o -selection clipboard)"'
 #
 alias modalacritty='v ~/.config/alacritty/alacritty.yml'
 alias modbspwm='v ~/.config/bspwm/bspwmrc'
+alias moddocker='v /docker/docker-compose.yml'
 alias moddunst='v ~/.config/dunst/dunstrc'
 alias modfish='v ~/.config/fish/config.fish'
 alias modgit='v ~/.gitconfig'
+alias modpicom='v ~/.config/picom/picom.conf'
 alias modpolybar='v ~/.config/polybar'
-alias modsxhkd='v .config/sxhkd/sxhkdrc'
+alias modsxhkd='v ~/.config/sxhkd/sxhkdrc'
 alias modvim='v ~/.config/nvim/init.vim'
 
 alias fishreload='source ~/.config/fish/config.fish'
