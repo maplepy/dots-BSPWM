@@ -16,7 +16,10 @@ bspc config gapless_monocle      true
 # Desktop
 bspc rule -a code-oss desktop='^1'
 bspc rule -a *:Navigator desktop='^2' # Any web browser
+bspc rule -a FreeTube desktop='^3'
+bspc rule -a Signal desktop='^6'
 bspc rule -a Steam desktop='^9'
+bspc rule -a Yad desktop='^9' state=floating
 
 # bspc rule -a Gimp desktop='^9' state=floating follow=on
 
@@ -30,14 +33,13 @@ bspc rule -a Screenkey manage=off
 
 ### Autostart
 # 1080p resolution
-xrandr --output Virtual-1 --mode 1920x1080 --rate 144
+# xrandr --output Virtual-1 --mode 1920x1080 --rate 144
 
 # Compositor
-picom --no-vsync -b &
+picom -b &
 
 # Polybar
 sh "$HOME/.config/polybar/launch.sh" &
 
 # Background
-feh ~/Downloads/00016-191680279-a-city-skyline-with-birds-a-skyscraper-with-an-red-illuminated-antenna-on-its-top.png --bg-fill
-
+feh /mnt/datadrive/Images/Wallpapers/shinjuku-tokyo-mimimal-4k-o8.jpg --bg-fill 
