@@ -1,4 +1,6 @@
 # https://xyne.dev/projects/mimeo/
 /usr/bin/firefox %U
-  ^https?://example
+  ^https?://(www.)?reddit.com/
+  ^https?://(www.)?twitch.tv/
   ^https?://(www.)?youtube.com/watch\?.*v=
+  ^https?://(www.)?tiktok.tv/
