@@ -34,6 +34,7 @@ pacman
 pacman-contrib
 pavucontrol
 pcmanfm
+perl-rename
 picom
 polybar
 reflector
