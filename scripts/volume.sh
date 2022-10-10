@@ -12,7 +12,7 @@ speaker_source="@DEFAULT_SINK@"
 
 # TODO: Remove repetitions
 mic_update() {
-    mic_volume=$(pactl get-source-volume $mic_source | grep -Pow '\d+%' | head -1)
+    mic_volume=$(pactl get-source-volume $mic_source | grep -Pow '\d{0,3}+%' | head -1)
     mic_muted=$(pactl get-source-mute $mic_source | grep -Pow "(yes|no)")
 
     if [[ -z "${mic_volume}" ]]; then
@@ -22,7 +22,7 @@ mic_update() {
 }
 
 speaker_update() {
-    speaker_volume=$(pactl get-sink-volume $speaker_source | grep -Pow '\d+%' | head -1)
+    speaker_volume=$(pactl get-sink-volume $speaker_source | grep -Pow '\d{0,3}+' | head -1)
     speaker_muted=$(pactl get-sink-mute $speaker_source | grep -Pow "(yes|no)")
 
     if [[ -z "${speaker_volume}" ]]; then
@@ -31,7 +31,7 @@ speaker_update() {
     fi
 }
 
-function mic () {
+mic () {
     case "$1" in
         status)
             mic_update
@@ -79,7 +79,7 @@ function mic () {
     esac
 }
 
-function speaker () {
+speaker () {
     case "$1" in
         init)
             pactl set-sink-volume $speaker_source 25%
@@ -102,17 +102,25 @@ function speaker () {
     esac
 
     speaker_update
-    if [[ "$speaker_muted" == "yes" || $speaker_volume == "0%" ]]; then
+
+    if [[ "$speaker_muted" == "yes" || $speaker_volume == "0" ]]; then
         dunstify -a "changevolume"                      \
             -i speaker-off                              \
             -h string:x-dunst-stack-tag:$speaker_tag    \
             "Speaker" "Volume: <b>muted</b>"
     else
+        if [ "$speaker_volume" -gt 0 ] && [ "$speaker_volume" -le 33 ]; then
+            speaker_notif_state=low
+        elif [ "$speaker_volume" -gt 33 ] && [ "$speaker_volume" -le 66 ]; then
+            speaker_notif_state=medium
+        else
+            speaker_notif_state=high
+        fi
         dunstify -a "changevolume"                      \
-            -i speaker-high                             \
+            -i speaker-$speaker_notif_state             \
             -h string:x-dunst-stack-tag:$speaker_tag    \
             -h int:value:"$speaker_volume"              \
-            "Speaker" "Volume: <b>$speaker_volume</b>"
+            "Speaker" "Volume: <b>$speaker_volume%</b>"
     fi
     canberra-gtk-play -i audio-volume-change -d "changeVolume"
 }
