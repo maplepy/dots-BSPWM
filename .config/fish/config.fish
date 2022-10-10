@@ -9,9 +9,9 @@ alias v='nvim'
 
 # fancy ls
 alias ls='lsd --group-dirs first'
-alias ll='ls -lv'
+alias l='ls -lv'
 alias la='ls -A'
-alias lla='ls -lA'
+alias ll='ls -lA'
 alias lt='ls --tree'
 
 alias df='df -h'
