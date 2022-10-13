@@ -23,16 +23,18 @@ bspc rule -a *:Navigator desktop='^2' # Any web browser
 bspc rule -a social:Navigator desktop='^3' # Any web browser
 bspc rule -a FreeTube desktop='^3'
 bspc rule -a Signal desktop='^6'
-bspc rule -a steam_app_0 desktop='^8'
+bspc rule -a stratz desktop='^9'
 bspc rule -a Steam desktop='^9' follow=off
-bspc rule -a Yad desktop='^9' state=floating
+bspc rule -a Yad desktop='^8' state=floating follow=on
 
 # bspc rule -a Gimp desktop='^9' state=floating follow=on
 
 # Special
-bspc rule -a Signal:signal:"Sharing screen" sticky=on state=floating
 bspc rule -a Pavucontrol state=floating
 bspc rule -a Gpick state=floating
+bspc rule -a Signal:signal:"Sharing screen" sticky=on state=floating
+bspc rule -a firefox:Toolkit state=floating sticky=on rectangle=210x120
+#bspc rule -a *:*:"Picture-in-picture" state=floating sticky=on rectangle=640x360
 
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
