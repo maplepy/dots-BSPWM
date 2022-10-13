@@ -50,7 +50,7 @@ super + {_,shift + }q
 	bspc node -{c,k}
 
 # Cycle Monocle/Normal
-super + alt + m
+super + ctrl + m
 	bspc desktop -l next
 
 # Set window as Master
