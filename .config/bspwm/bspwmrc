@@ -45,6 +45,9 @@ bspc rule -a Screenkey manage=off
 # 1080p resolution
 # xrandr --output Virtual-1 --mode 1920x1080 --rate 144
 
+# Numlock
+numlockx
+
 # Compositor
 picom -b &
 
