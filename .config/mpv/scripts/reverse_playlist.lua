@@ -27,4 +27,4 @@ local function reverse_playlist()
     mp.register_event("file-loaded", seeker)
 end
 
-mp.add_key_binding("Meta+r", "reverse-playlist", reverse_playlist)
+mp.add_key_binding("Ctrl+p", "reverse-playlist", reverse_playlist)
