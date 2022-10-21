@@ -8,7 +8,7 @@
 local decay_delay = .05 -- rate of time by which playback speed is decreased
 local speed_increments = .2 -- amount by which playback speed is increased each time
 local speed_decrements = .4 -- amount by which playback speed is decreased each time
-local max_rate = 5 -- will not exceed this rate
+local max_rate = 10 -- will not exceed this rate
 local inertial_decay = false -- changes the behavior of speed decay
 
 
