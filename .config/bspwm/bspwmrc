@@ -58,4 +58,5 @@ sh "$HOME/.config/polybar/launch.sh" &
 feh /mnt/datadrive/Images/Wallpapers/shinjuku-tokyo-mimimal-4k-o8.jpg --bg-fill
 
 # Launch CKB and close immediately
-ckb-next && sleep 1 && bspc node -c  
+ckb-next && sleep 3 && bspc node -c
+
