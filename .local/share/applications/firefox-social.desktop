@@ -1,0 +1,26 @@
+[Desktop Entry]
+Name=Firefox Social
+
+GenericName=Web Browser
+Comment=Browse the World Wide Web
+Keywords=Internet;WWW;Browser;Web;Explorer;Reddit;Twitch;YouTube;Tiktok
+
+Exec=/usr/bin/firefox -p social --class social %U
+Icon=firefox-nightly
+
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;application/x-xpinstall;application/pdf;application/json
+StartupNotify=true
+StartupWMClass=firefox-social
+Categories=Network
+
+# [Desktop Action new-window]
+# Name=New Window
+# Exec=/usr/lib/firefox/firefox --new-window %u
+
+# [Desktop Action new-private-window]
+# Name=New Private Window
+# Exec=/usr/lib/firefox/firefox --private-window %u
+Hidden=false
