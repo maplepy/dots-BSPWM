@@ -27,6 +27,7 @@ alias pacman-orphaned='sudo pacman -Rns (pacman -Qtdq)' # Remove orphaned packag
 alias pacman-purge='yay -Sc && yay -c' # Clear cache and unused packages
 alias mirror-update='curl -s "https://archlinux.org/mirrorlist/?country=FR&country=GB&country=DE&protocol=https&use_mirror_status=on" | sed -e "s/^#Server/Server/" -e "/^#/d" | rankmirrors -n 5 -'
 
+alias gitpullrecursive='find . -type d -name .git -exec sh -c "cd \"{}\"/../ && pwd && git pull" \;'
 alias cleanemptydir='sudo find . -type d -empty -delete' # remove empty directories
 alias pastehere='sleep 2; xdotool type "$(xclip -o -selection clipboard)"'
 
@@ -39,6 +40,7 @@ alias moddocker='v /docker/docker-compose.yml'
 alias moddunst='v ~/.config/dunst/dunstrc'
 alias modfish='v ~/.config/fish/config.fish'
 alias modgit='v ~/.gitconfig'
+alias modmpv='v ~/.config/mpv/'
 alias modpicom='v ~/.config/picom/picom.conf'
 alias modpolybar='v ~/.config/polybar'
 alias modsxhkd='v ~/.config/sxhkd/sxhkdrc'
@@ -60,6 +62,7 @@ alias fgrep='fgrep --color=auto'
 
 # export PATH='":$PATH
 export EDITOR='nvim'
+export SUDO_EDITOR='vim'
 export TERMINAL='alacritty'
 export MANPAGER='nvim +Man!'
 export MANWIDTH=999
