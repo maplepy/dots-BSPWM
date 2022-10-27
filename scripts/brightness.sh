@@ -5,13 +5,12 @@ get_brightness_icon() {
 
     # Normal brightness
     if [ "$brightness" -le 50 ]; then
-        # speaker_status_icon=" %{T5}"
         brightness_icon=""
-        brightness_level="normal"
+        # brightness_level="normal"
     # High brightness
     else
         brightness_icon="ﯦ"
-        brightness_level="high"
+        # brightness_level="high"
     fi
 }
 
@@ -27,11 +26,17 @@ send_notification() {
 
 # Get args passed
 case "$1" in
-    inc) 
-        brillo -q -A 2
+    -*)
+        brillo -q -U "$(echo "$1" | tr -d '-')" # -2 -> 2
         ;;
-    dec)
-        brillo -q -U 2
+    +*) 
+        brillo -q -A "$(echo "$1" | tr -d '+')" # +2 -> 2
+        ;;
+    min)
+        brillo -q -S 0
+        ;;
+    max)
+        brillo -q -S 100
         ;;
     reset)
         brillo -q -S 75
