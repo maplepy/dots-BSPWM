@@ -6,7 +6,6 @@ bluez-utils
 bsp-layout
 bspwm
 btop
-ckb-next-git
 code
 code-marketplace
 docker
@@ -35,10 +34,7 @@ mullvad-vpn-bin
 neofetch
 neovim
 nerd-fonts-jetbrains-mono
-nvidia
-nvidia-utils
 nsxiv
-numlockx
 obsidian
 openssh
 pacman

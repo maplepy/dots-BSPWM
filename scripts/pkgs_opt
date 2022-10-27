@@ -5,6 +5,7 @@ protonup-qt
 goverlay
 gamemode
 
-playerctl
-docker
-docker-compose 
+ckb-next-git
+nvidia
+nvidia-utils
+numlockx
