@@ -22,7 +22,7 @@ mic_update() {
 }
 
 speaker_update() {
-    speaker_volume=$(pactl get-sink-volume $speaker_source | grep -Pow '\d{0,3}+' | head -1)
+    speaker_volume=$(pactl get-sink-volume $speaker_source | grep -Pow '\d{0,3}+(?=%)' | head -1)
     speaker_muted=$(pactl get-sink-mute $speaker_source | grep -Pow "(yes|no)")
 
     if [[ -z "${speaker_volume}" ]]; then
@@ -116,10 +116,10 @@ speaker () {
         else
             speaker_notif_state=high
         fi
-        dunstify -a "changevolume"                      \
-            -i speaker-$speaker_notif_state             \
-            -h string:x-dunst-stack-tag:$speaker_tag    \
-            -h int:value:"$speaker_volume"              \
+        dunstify -a "changevolume"                    \
+            -h string:x-dunst-stack-tag:$speaker_tag  \
+            -h int:value:"$speaker_volume"            \
+            -i "speaker-$speaker_notif_state"         \
             "Speaker" "Volume: <b>$speaker_volume%</b>"
     fi
     canberra-gtk-play -i audio-volume-change -d "changeVolume"
