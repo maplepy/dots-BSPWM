@@ -1,2 +1,4 @@
-# sxhkd -m 1 &
+#!/bin/sh 
+
+sxhkd -m 1 &
 exec bspwm
