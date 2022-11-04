@@ -31,7 +31,7 @@ speaker_update() {
     fi
 }
 
-mic () {
+mic() {
     case "$1" in
         status)
             mic_update
@@ -79,7 +79,7 @@ mic () {
     esac
 }
 
-speaker () {
+speaker() {
     case "$1" in
         init)
             pactl set-sink-volume $speaker_source 25%
@@ -90,11 +90,11 @@ speaker () {
         ;;
         raise|inc)
             pactl set-sink-mute   $speaker_source 0
-            pactl set-sink-volume $speaker_source +5%
+            pactl set-sink-volume $speaker_source +2%
         ;;
         lower|dec)
             pactl set-sink-mute   $speaker_source 0
-            pactl set-sink-volume $speaker_source -5%
+            pactl set-sink-volume $speaker_source -2%
         ;;
         *)
             echo "Available commands: status, init, toggle, raise|inc, lower|dec"
