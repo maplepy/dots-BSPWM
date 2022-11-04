@@ -31,6 +31,10 @@ alias gitpullrecursive='find . -type d -name .git -exec sh -c "cd \"{}\"/../ && 
 alias cleanemptydir='sudo find . -type d -empty -delete' # remove empty directories
 alias pastehere='sleep 2; xdotool type "$(xclip -o -selection clipboard)"'
 
+alias sstart='sudo systemctl start'
+alias srstart='sudo systemctl restart'
+alias sstop='sudo systemctl stop'
+
 #
 ## Config files
 #
