@@ -55,7 +55,8 @@ spotify
 sxhkd
 thunar
 tldr
-ttf-dejavu
+ttf-dejavu 
+ttf-material-design-icons-git
 ufw
 xclip
 xdg-utils-mimeo
