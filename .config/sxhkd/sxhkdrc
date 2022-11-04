@@ -38,8 +38,9 @@ XF86Audio{Stop,Prev,Next,Play}
 	~/scripts/media.sh keys {stop,prev,next,play}
 
 # brightness control
-XF86MonBrightness{Up,Down}
-	xbacklight -{inc,dec} 5
+{_, alt + ,ctrl + ,super + }XF86MonBrightness{Down,Up}
+	~/scripts/brightness.sh {-1,-0.5,-10,min,+1,+0.5,+10,max}
+
 
 #
 ## BSPWM
@@ -78,7 +79,7 @@ super + ctrl + {t,shift + t,s,f}
 #
 
 # Focus/Swap desktop
-super + {_,ctrl + }{ampersand,eacute,quotedbl,apostrophe,parenleft,minus,egrave,underscore,ccedilla,agrave}
+super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
 # focus the node in the given direction
@@ -136,7 +137,7 @@ super + alt + {h,j,k,l}
 	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
 # contract a window by moving one of its side inward
-super + alt + shift + {h,j,k,l}
+super + alt + ctrl + {h,j,k,l}
 	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
 # move a floating window
