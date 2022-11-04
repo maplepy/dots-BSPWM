@@ -16,11 +16,10 @@ get_brightness_icon() {
 
 send_notification() {
     get_brightness_icon
-    dunstify -a "changebrightness"          \
-        -r "4000"                           \
-        -t 4010                             \
-        -h int:value:"$brightness"          \
-        -i "brightness-$brightness_icon"   \
+    dunstify -a "changebrightness"                  \
+        -h string:x-dunst-stack-tag:brightness      \
+        -h int:value:"$brightness"                  \
+        -i "brightness-$brightness_icon"            \
         "Backlight" "Brightness: <b>$brightness%</b>"
 }
 
