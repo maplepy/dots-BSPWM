@@ -46,6 +46,7 @@ perl-rename
 picom
 playerctl
 polybar
+rate-mirrors-bin
 reflector
 rofi
 rsync
