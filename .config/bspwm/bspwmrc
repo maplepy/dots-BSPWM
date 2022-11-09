@@ -22,9 +22,11 @@ bspc rule -a code-oss desktop='^1'
 bspc rule -a *:Navigator desktop='^2' # Any web browser
 bspc rule -a social:Navigator desktop='^3' # Social firefox profile
 bspc rule -a FreeTube desktop='^3'
+bspc rule -a kritae desktop='^4'
 bspc rule -a Signal desktop='^6'
 bspc rule -a Yad desktop='^8' state=floating follow=on # Stl
 bspc rule -a streaming_client desktop='^8' # Steam remoteplay
+bspc rule -a overwatch.exe desktop='^8'
 bspc rule -a stratz desktop='^9'
 bspc rule -a Steam desktop='^9' state=tiled follow=off
 bspc rule -a bottles desktop='^9' follow=off
