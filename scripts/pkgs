@@ -20,6 +20,7 @@ freetube-bin
 fzf
 gparted
 gpick
+gvfs
 imagemagick
 libappimage
 lsd
@@ -45,6 +46,7 @@ perl-rename
 picom
 playerctl
 polybar
+rate-mirrors-bin
 reflector
 rofi
 rsync

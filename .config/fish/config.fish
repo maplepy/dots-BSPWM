@@ -28,8 +28,16 @@ alias pacman-purge='yay -Sc && yay -c' # Clear cache and unused packages
 alias mirror-update='curl -s "https://archlinux.org/mirrorlist/?country=FR&country=GB&country=DE&protocol=https&use_mirror_status=on" | sed -e "s/^#Server/Server/" -e "/^#/d" | rankmirrors -n 5 -'
 
 alias gitpullrecursive='find . -type d -name .git -exec sh -c "cd \"{}\"/../ && pwd && git pull" \;'
+alias gcm='git commit -m'
+
 alias cleanemptydir='sudo find . -type d -empty -delete' # remove empty directories
+alias cleancoderunner='find . -type f  -name "ft*" ! -name "*.c" -delete' # clean unused test compiled files from vscode coderunner extensions
+
 alias pastehere='sleep 2; xdotool type "$(xclip -o -selection clipboard)"'
+
+alias sstart='sudo systemctl start'
+alias srstart='sudo systemctl restart'
+alias sstop='sudo systemctl stop'
 
 #
 ## Config files
