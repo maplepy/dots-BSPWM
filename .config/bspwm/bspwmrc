@@ -22,6 +22,7 @@ bspc rule -a code-oss desktop='^1'
 bspc rule -a *:Navigator desktop='^2' # Any web browser
 bspc rule -a social:Navigator desktop='^3' # Social firefox profile
 bspc rule -a FreeTube desktop='^3'
+bspc rule -a obsidian desktop='^4'
 bspc rule -a krita desktop='^5'
 bspc rule -a Signal desktop='^6'
 bspc rule -a Yad desktop='^8' state=floating follow=on # Stl
@@ -60,6 +61,9 @@ sh "$HOME/.config/polybar/launch.sh" &
 # Background
 feh /mnt/datadrive/Images/Wallpapers/shinjuku-tokyo-mimimal-4k-o8.jpg --bg-fill
 
+# ICC Profile
+xcalib /mnt/four/data/download/asus_vg248qe_svet.icm
+
 # Launch CKB and close immediately
-ckb-next && sleep 3 && bspc node -c
+ckb-next
 
