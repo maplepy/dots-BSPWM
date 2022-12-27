@@ -11,7 +11,7 @@ empty=""
 cmd="$0 metadata"
 prefix="$0 prefix"
 
-function scroll() {
+scroll() {
 	zscroll --length=60 \
 		--delay 0.2 \
 		--before-text "" \
@@ -122,7 +122,7 @@ if [[ -z "${artist}" ]]; then
 fi
 
 ## Format the prefix for zscroll match command
-function prefix() {
+prefix() {
 
 	# if there is a top player create the prefix
 	if [[ -n "$top_player" ]]; then
@@ -135,7 +135,7 @@ function prefix() {
 }
 
 # Get title and artist info
-function metadata() {
+metadata() {
 	if [[ -n "$top_player" ]]; then
 		if [[ -z "${artist}" ]]; then
 			# no artist
@@ -153,7 +153,7 @@ function metadata() {
 }
 
 # interact with the media
-function keys() {
+keys() {
 	# get the command
 	case "$2" in
 	play | pause) cmd_arg="play-pause" ;;
@@ -166,7 +166,7 @@ function keys() {
 }
 
 # get the vars
-function debug() {
+debug() {
 	echo ""
 	echo "playing=$playing"
 	echo "last player tested=$player status=$player_status"
