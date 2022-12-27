@@ -39,3 +39,4 @@
 {"_id":"useSponsorBlock","value":true}
 {"_id":"videoPlaybackRateMouseScroll","value":false}
 {"_id":"videoVolumeMouseScroll","value":true}
+{"_id":"bounds","value":{"x":2,"y":24,"width":994,"height":1054,"maximized":false,"fullScreen":false}}
