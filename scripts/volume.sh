@@ -10,15 +10,15 @@ speaker_tag="speakervolume"
 mic_source="@DEFAULT_SOURCE@"
 speaker_source="@DEFAULT_SINK@"
 
-# TODO: Refactor duplicates 
+# TODO: Remove repetitions
 mic_update() {
     mic_volume=$(pactl get-source-volume $mic_source | grep -Pow '\d{0,3}+%' | head -1)
     mic_muted=$(pactl get-source-mute $mic_source | grep -Pow "(yes|no)")
 
-    #if [[ -z "${mic_volume}" ]]; then
-    #    echo "mic not found"
-    #    exit 1
-    #fi
+    if [[ -z "${mic_volume}" ]]; then
+        echo "mic not found"
+        exit 1
+    fi
 }
 
 speaker_update() {
@@ -122,7 +122,7 @@ speaker() {
             -i "speaker-$speaker_notif_state"         \
             "Speaker" "Volume: <b>$speaker_volume%</b>"
     fi
-    #canberra-gtk-play -i audio-volume-change -d "changeVolume"
+    canberra-gtk-play -i audio-volume-change -d "changeVolume"
 }
 
 case "$1" in
